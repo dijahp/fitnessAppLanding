@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    padding-bottom: 65.89%;
+    background: url(img/fitbackground.jpg) 0 0 no-repeat / cover;
+    position: absolute;
+    background-attachment: fixed;
+}
+
+
+h1 img {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+    
+}
+
+#main,#signUpMain {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    opacity: .9;;
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+}
+hr {
+    margin: 5px auto;
+    padding: 0px;
+}
+
+input[type=text],input[type=password],input[type=email] {
+    height: 25px;
+    width: 250px;
+    font-family: sans-serif;
+    font-size: 13px;
+    border-radius: 35px;
+    border: none;
+    outline:none;
+    border: 1px solid darkgray;
+    padding: 10px;
+}
+
+
+
+#help {
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    font-size: 12px;
+
+}
+
+#signInButton,#signUpButton {
+    height: 35px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 0px;
+    border: none;
+    outline: none;
+    background-color: #ff4d4d;
+    border-radius: 35px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#signUpMessage, #signInMessage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #777;
+}
+
+a {
+    color: #0066ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1975ff;
+    text-decoration: underline;.
+
+}
+
+ /* Hide Sign Up Form */
+
+ #main {
+ -webkit-backface-visibility:hidden;
+ -webkit-animation-duration: 2s;
+ }
+
+ #signUpMain {
+     -webkit-backface-visibility: hidden;
+     -webkit-transform:translate(-50%,-50%) rotateY(180deg);
+     -webkit-animation-duration: 2s;
+ }
+
+
+
+
+
+
+
+ 
+ /*Animate switch when link is clicked*/
+ 
+ @-webkit-keyframes showSignUp {
+     0%{transform: translate(-50%,-50%) rotateY(0deg);}
+     100%{transform: translate(-50%,-50%) rotateY(180deg);}
+ }
+
+ @-webkit-keyframes hideSignIn {
+    0%{transform: translate(-50%,-50%) rotateY(180deg);}
+    100%{transform: translate(-50%,-50%) rotateY(0deg);}
+}
+
+/* Show SignIn  */
+
+@-webkit-keyframes showSignIn {
+    0%{transform: translate(-50%,-50%) rotateY(0deg);}
+    100%{transform: translate(-50%,-50%) rotateY(180deg);}
+}
+
+@-webkit-keyframes hideSignUp {
+   0%{transform: translate(-50%,-50%) rotateY(180deg);}
+   100%{transform: translate(-50%,-50%) rotateY(0deg);}
+}
+

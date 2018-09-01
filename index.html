@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Fit Tracker</title>
+</head>
+<body>
+    <nav>
+        <h1><img src="img/fitness.svg" alt=""></h1>
+    </nav>
+
+<!--           All for signing in         -->
+    <div id="main">
+        <table border="0" cellspacing="10">
+            <tr>
+                <td>
+                    <div id="title">SIGN IN</div>
+                    <hr size="1px" width="100px color="black">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="USER ID">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" placeholder="PASSWORD">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <div id="help">FORGOT PASSWORD</div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" value="SIGN IN" id="signInButton">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div id="signUpMessage">DON'T HAVE AN ACCOUNT <a href="#" id="flipSignUp">SIGN UP</a></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+<!--         All for signing UP      -->
+
+
+    <div id="signUpMain">
+            <table border="0" cellspacing="10">
+                <tr>
+                    <td>
+                        <div id="title">SIGN UP</div>
+                        <hr size="1px" width="100px color="black">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="FULL NAME">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="EMAIL">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="PASSWORD">
+                    </td>
+                    </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="SIGN UP" id="signUpButton">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="signInMessage">HAVE AN ACCOUNT? <a href="#" id="flipSignIn">SIGN IN</a></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
